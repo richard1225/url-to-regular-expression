@@ -106,7 +106,7 @@ def find_lcsubstr_among_strlist(strlist, pat_flag=False):
     return lcsubstr
 
 substr = find_lcsubstr_among_strlist(url_list)
-print substr
+# print substr
 
 
 def gen_pat(s):
@@ -283,47 +283,47 @@ def pattern_extract(url_list):
     for url in url_list:
         pat_url_list.append(format_pat_url(url, substr))
     pat_substr = find_lcsubstr_among_strlist(pat_url_list, True)
-    print pat_substr
+    # print pat_substr
     if substr == pat_substr or pat_substr[len(pat_substr)-1] in g_meta_chars:
         pat_substr += '*'
     return trans_dot(pat_substr)
 
 
-ul3 = [
-'http://wap.ifeng.com/tech/app/news?ou=p%3D3&aid=111647103',
-'http://wap.ifeng.com/tech/app/news?m=b775ae2893651f1_5619349&cid=0&aid=100311204',
-'http://wap.ifeng.com/tech/app/news?m=9c62b25bcaf6b15_1750828&cid=0&aid=111770495',
-'http://wap.ifeng.com/tech/app/news?m=7c182dc64d498d1_2772953&aid=98820217',
-'http://wap.ifeng.com/tech/app/news?m=c5d4357692aebd2_8662167&aid=95454771&p=3',
-'http://wap.ifeng.com/tech/app/news?m=4293f4c837fb5a0_16924079&aid=112146540',
-'http://wap.ifeng.com/tech/app/news?m=e0a684c315c2ddd_15435872&cid=0&aid=100314418',
-'http://wap.ifeng.com/tech/app/news?cid=0&aid=101551869',
-'http://wap.ifeng.com/tech/app/news?cid=0&aid=98851827',
-'http://wap.ifeng.com/tech/app/news?cid=0&aid=101794798'
-]
+# ul3 = [
+# 'http://wap.ifeng.com/tech/app/news?ou=p%3D3&aid=111647103',
+# 'http://wap.ifeng.com/tech/app/news?m=b775ae2893651f1_5619349&cid=0&aid=100311204',
+# 'http://wap.ifeng.com/tech/app/news?m=9c62b25bcaf6b15_1750828&cid=0&aid=111770495',
+# 'http://wap.ifeng.com/tech/app/news?m=7c182dc64d498d1_2772953&aid=98820217',
+# 'http://wap.ifeng.com/tech/app/news?m=c5d4357692aebd2_8662167&aid=95454771&p=3',
+# 'http://wap.ifeng.com/tech/app/news?m=4293f4c837fb5a0_16924079&aid=112146540',
+# 'http://wap.ifeng.com/tech/app/news?m=e0a684c315c2ddd_15435872&cid=0&aid=100314418',
+# 'http://wap.ifeng.com/tech/app/news?cid=0&aid=101551869',
+# 'http://wap.ifeng.com/tech/app/news?cid=0&aid=98851827',
+# 'http://wap.ifeng.com/tech/app/news?cid=0&aid=101794798'
+# ]
 
 
-ul4 = [
-'http://wap.ifeng.com/tech/digi/shouji/news?ou=ifeng_tmall&v=5&aid=119353960',
-'http://wap.ifeng.com/tech/digi/shouji/news?m=1&cid=0&aid=101555306',
-'http://wap.ifeng.com/tech/digi/shouji/news?m=880ca9bfd13536e_8324436&cid=0&aid=114009751',
-'http://wap.ifeng.com/tech/digi/shouji/news?m=97c6bc2d6431b30_15389722&cid=0&aid=113871491',
-'http://wap.ifeng.com/tech/digi/shouji/news?m=f52beec9fdd8db8_1319451&cid=0&aid=114435412',
-#'http://wap.ifeng.com/tech/digi/shouji/news?m=1'+onmouseover%3Dijv%3D128+'&aid=119318100',
-'http://wap.ifeng.com/tech/digi/shouji/news?m=p%3D5&cid=0&aid=119163529',
-'http://wap.ifeng.com/tech/digi/shouji/news?m=a7616e6c71b016e_12611427&cid=0&aid=114002007',
-'http://wap.ifeng.com/tech/digi/shouji/news?m=f8a15a46ddbce38_11201912&cid=0&aid=119306079',
-'http://wap.ifeng.com/tech/digi/shouji/news?m=4fbd2f65b00453e_14955738&aid=110484188',
-'http://wap.ifeng.com/tech/digi/shouji/news?_gp=0&m=1&cid=0&aid=110686859',
-'http://wap.ifeng.com/tech/digi/shouji/news?cid=0&aid=71063578',
-'http://wap.ifeng.com/tech/digi/shouji/news?cid=0&aid=97030028',
-'http://wap.ifeng.com/tech/digi/shouji/news?cid=0&aid=107658312&p=1',
-'http://wap.ifeng.com/tech/digi/shouji/news?cid=0&aid=102599953&p=4',
-'http://wap.ifeng.com/tech/digi/shouji/news?cid=0&aid=87327954'
-]
-print pattern_extract(ul3)
-print pattern_extract(url_list)
-print pattern_extract(ul4)
+# ul4 = [
+# 'http://wap.ifeng.com/tech/digi/shouji/news?ou=ifeng_tmall&v=5&aid=119353960',
+# 'http://wap.ifeng.com/tech/digi/shouji/news?m=1&cid=0&aid=101555306',
+# 'http://wap.ifeng.com/tech/digi/shouji/news?m=880ca9bfd13536e_8324436&cid=0&aid=114009751',
+# 'http://wap.ifeng.com/tech/digi/shouji/news?m=97c6bc2d6431b30_15389722&cid=0&aid=113871491',
+# 'http://wap.ifeng.com/tech/digi/shouji/news?m=f52beec9fdd8db8_1319451&cid=0&aid=114435412',
+# #'http://wap.ifeng.com/tech/digi/shouji/news?m=1'+onmouseover%3Dijv%3D128+'&aid=119318100',
+# 'http://wap.ifeng.com/tech/digi/shouji/news?m=p%3D5&cid=0&aid=119163529',
+# 'http://wap.ifeng.com/tech/digi/shouji/news?m=a7616e6c71b016e_12611427&cid=0&aid=114002007',
+# 'http://wap.ifeng.com/tech/digi/shouji/news?m=f8a15a46ddbce38_11201912&cid=0&aid=119306079',
+# 'http://wap.ifeng.com/tech/digi/shouji/news?m=4fbd2f65b00453e_14955738&aid=110484188',
+# 'http://wap.ifeng.com/tech/digi/shouji/news?_gp=0&m=1&cid=0&aid=110686859',
+# 'http://wap.ifeng.com/tech/digi/shouji/news?cid=0&aid=71063578',
+# 'http://wap.ifeng.com/tech/digi/shouji/news?cid=0&aid=97030028',
+# 'http://wap.ifeng.com/tech/digi/shouji/news?cid=0&aid=107658312&p=1',
+# 'http://wap.ifeng.com/tech/digi/shouji/news?cid=0&aid=102599953&p=4',
+# 'http://wap.ifeng.com/tech/digi/shouji/news?cid=0&aid=87327954'
+# ]
+# print pattern_extract(ul3)
+# print pattern_extract(url_list)
+# print pattern_extract(ul4)
 
 
 if __name__ == '__main__':

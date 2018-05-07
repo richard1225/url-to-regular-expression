@@ -9,10 +9,7 @@
 import sys
 import re
 
-if __name__ == "__main__":
-
-    url_fname = sys.argv[1]
-    re_fname = sys.argv[2]
+def verify(url_fname, re_fname):
     
     # 读取原url
     with open(url_fname) as f:
@@ -33,7 +30,6 @@ if __name__ == "__main__":
     count = 0
     # 统计有多少个url被覆盖了
     total = []
-    print len(re_l)
     for res in re_l:
         pat = re.compile(res)
         total.extend(re.findall(pat, url_list))
@@ -41,3 +37,10 @@ if __name__ == "__main__":
     url_list = list(set(url_list.split("     ")))
     
     print "[覆盖URL数]:\t", count, "\n[总URL数]:\t", len(url_list), "\n[覆盖率]:\t%.2f"%(count*100.0/len(url_list))+"%"
+
+if __name__ == "__main__":
+
+    url_fname = sys.argv[1]
+    re_fname = sys.argv[2]
+    verify(url_fname,re_fname)
+    

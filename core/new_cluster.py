@@ -5,10 +5,11 @@
     取URL的路径depth个前缀作为key，url的list作为value，维护一个key/value的映射
 
     取分类好的URL列表
-
+    输入参数 python new_cluster.py [depth] [repeat] [url_file]
 """
 import re
 import sys
+import random
 
 class List_Tree(object):
     def __init__(self, depth=0, repeat=1):
@@ -32,15 +33,20 @@ class List_Tree(object):
                 self.url_dict[prefix]['repeat'] += 1
                 self.url_dict[prefix]['url'].append(url)
     
+    
     def get_repeat(self):
+        result = ''
         for prefix in self.url_dict:
             if self.url_dict[prefix]['repeat'] >= self.repeat:
                 length = len(self.url_dict[prefix]['url'])
                 if len(self.url_dict[prefix]['url']) > 10:
                     length = 10
-                for url in self.url_dict[prefix]['url'][:length]:
-                    print url
-                print '\n'
+                urls = random.sample(self.url_dict[prefix]['url'], length)
+                for url in urls:
+                    result += url
+                    result += '\n'
+                result += '\n\n'
+        return result
 
 if __name__ == '__main__':
     depth = sys.argv[1]
@@ -55,4 +61,4 @@ if __name__ == '__main__':
     for url in url_list:
         cluster.insert(pat, url)
     
-    cluster.get_repeat()
+    print cluster.get_repeat()
