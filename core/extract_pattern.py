@@ -42,10 +42,10 @@ def find_lcsubstr(s1, s2):
         else:
             break
     return s1[0:p],p+1   #返回最长子串及其长度
-print find_lcsubstr('abcdfg','abdfg')
+# print find_lcsubstr('abcdfg','abdfg')
 a='http://www.yc.ifeng.com/toLogin?next=/book/3051216/199/'
 b='http://www.yc.ifeng.com/toLogin?next=/book/3050122/624/'
-print find_lcsubstr(a, b)
+# print find_lcsubstr(a, b)
 
 url_list = [
     'http://www.yc.ifeng.com/toLogin?next=/book/3050091/510/',
@@ -157,11 +157,11 @@ def gen_pat(s):
     if slash_flag == 1:
         res += '/'
     res = '[' + res + ']+'
-    if other_flag == 1:
-        print other_chars
+    # if other_flag == 1:
+        # print other_chars
     return res, other_flag, other_chars
 
-print gen_pat('3049983azdsaf-AZ._++')
+# print gen_pat('3049983azdsaf-AZ._++')
    
 # 参数格式化
 def format_pat_url(url, substr):
@@ -208,7 +208,8 @@ def format_pat_url(url, substr):
                 if i != len(url) -1 or (i == len(url) - 1 and url[end] == '/'):
                      res += url[end]
             else:
-                print 'other c', c_list
+                # print 'other c', c_list
+                pass
             beg = end + 1
             end = -1
             
