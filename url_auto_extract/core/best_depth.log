@@ -1,0 +1,113 @@
+
+---handling:	qq.com
+------------------------------
+[domain]:	qq.com
+[coverage]:	95.0737246483%
+[Best Depth]:	4
+loop cost 2 s
+------------------------------
+---handling:	sohu.com
+------------------------------
+[domain]:	sohu.com
+[coverage]:	94.311245359%
+[Best Depth]:	4
+loop cost 2 s
+------------------------------
+---handling:	sina.com.cn
+------------------------------
+[domain]:	sina.com.cn
+[coverage]:	96.4263174503%
+[Best Depth]:	4
+loop cost 3 s
+------------------------------
+---handling:	youth.cn
+------------------------------
+[domain]:	youth.cn
+[coverage]:	96.2700228833%
+[Best Depth]:	3
+loop cost 1 s
+------------------------------
+---handling:	xinhuanet.com
+------------------------------
+[domain]:	xinhuanet.com
+[coverage]:	97.6377484232%
+[Best Depth]:	3
+loop cost 1 s
+------------------------------
+---handling:	k618.cn
+------------------------------
+[domain]:	k618.cn
+[coverage]:	0%
+[Best Depth]:	0
+loop cost 0 s
+------------------------------
+---handling:	china.com.cn
+------------------------------
+[domain]:	china.com.cn
+[coverage]:	0%
+[Best Depth]:	0
+loop cost 0 s
+------------------------------
+---handling:	gmw.cn
+------------------------------
+[domain]:	gmw.cn
+[coverage]:	0%
+[Best Depth]:	0
+loop cost 0 s
+------------------------------
+---handling:	caijing.com.cn
+------------------------------
+[domain]:	caijing.com.cn
+[coverage]:	0%
+[Best Depth]:	0
+loop cost 0 s
+------------------------------
+---handling:	eastday.com
+------------------------------
+[domain]:	eastday.com
+[coverage]:	0%
+[Best Depth]:	0
+loop cost 0 s
+------------------------------
+---handling:	huanqiu.com
+------------------------------
+[domain]:	huanqiu.com
+[coverage]:	0%
+[Best Depth]:	0
+loop cost 0 s
+------------------------------
+---handling:	chinadaily.com.cn
+------------------------------
+[domain]:	chinadaily.com.cn
+[coverage]:	0%
+[Best Depth]:	0
+loop cost 0 s
+------------------------------
+---handling:	rednet.cn
+------------------------------
+[domain]:	rednet.cn
+[coverage]:	0%
+[Best Depth]:	0
+loop cost 0 s
+------------------------------
+---handling:	people.com.cn
+------------------------------
+[domain]:	people.com.cn
+[coverage]:	0%
+[Best Depth]:	0
+loop cost 0 s
+------------------------------
+---handling:	17ok.com
+------------------------------
+[domain]:	17ok.com
+[coverage]:	0%
+[Best Depth]:	0
+loop cost 0 s
+------------------------------
+---handling:	jrj.com.cn
+------------------------------
+[domain]:	jrj.com.cn
+[coverage]:	0%
+[Best Depth]:	0
+loop cost 0 s
+------------------------------

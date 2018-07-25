@@ -327,6 +327,7 @@ def pattern_extract(url_list):
 
 
 if __name__ == '__main__':
+    # 接收.raw 文件，输出.re文件
     fname = sys.argv[1]
     ofname = sys.argv[2]
     url_list = []

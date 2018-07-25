@@ -9,6 +9,8 @@
 import sys
 import re
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
 def verify(url_fname, re_fname):
     
     # 读取原url
@@ -31,15 +33,19 @@ def verify(url_fname, re_fname):
     # 统计有多少个url被覆盖了
     total = []
     for res in re_l:
-        pat = re.compile(res+'[\S]+')
-        re_res = re.findall(pat, url_list)
+        try:
+            pat = re.compile(res+'[\S]+')
+            re_res = re.findall(pat, url_list)
+        except:
+            print res
 
         total.extend(re_res)
     total = list(set(total))
     count = len(total)
     url_list = url_list.split("     ")
     
-    print "[覆盖URL数]:\t", count, "\n[总URL数]:\t", len(url_list), "\n[覆盖率]:\t%.2f"%(count*100.0/len(url_list))+"%"
+    # print "[覆盖URL数]:\t", count, "\n[总URL数]:\t", len(url_list), "\n[覆盖率]:\t%.2f"%(count*100.0/len(url_list))+"%"
+    return count*100.0/len(url_list)
 
 if __name__ == "__main__":
 
